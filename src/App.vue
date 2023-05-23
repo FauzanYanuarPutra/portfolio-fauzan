@@ -1,6 +1,17 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { onMounted } from 'vue';
+
+export default {
+  mounted() {
+    // Menggunakan lifecycle hook `onMounted` untuk menjalankan kode setelah komponen dipasang
+    onMounted(() => {
+      // Set scroll position ke atas pada saat komponen dipasang
+      window.scrollTo(0, 0);
+    });
+  },
+};
 </script>
 
 <template>
