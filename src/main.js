@@ -1,11 +1,17 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import { gsap } from "gsap";
 
-const app = createApp(App)
+// Optionally, you can import specific GSAP plugins if needed
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-app.use(router)
+gsap.registerPlugin(ScrollTrigger);
 
-app.mount('#app')
+const app = createApp(App);
+
+app.use(router);
+
+app.mount("#app");
