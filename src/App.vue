@@ -1,6 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import ScrollGsap from './components/ScrollGsap.vue'
+import CertificateBelajar from './components/CertificateBelajar.vue'
+import NavbarMenu from './components/NavbarMenu.vue';
+
+
+
+
 import { ref, onMounted } from 'vue';
 
 const showElement = ref(false);
@@ -11,8 +18,16 @@ onMounted(() => {
 </script>
 
 <template>
+
+    <NavbarMenu></NavbarMenu>
+
+
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
-  <div class="w-[100%] " >
+  <div class="w-[100%] z-0" >
+  
+
+
+  
 
     <div class="awalan  px-5">
         <div class="flex naik-atas justify-center" >
@@ -22,8 +37,22 @@ onMounted(() => {
             </div>
         </div>
 
-        <div class="baru-muncul lg:mt-[20vh] w-[90%] lg:w-[800px]  mt-[50px] m-auto flex justify-center flex-col " :class="{ muncul: showElement }">
+        <!-- <ScrollGsap></ScrollGsap> -->
+
+
+        
+
+
+        <div class="baru-muncul lg:mt-[20vh] mt-[50px] w-[90%] lg:w-[800px]   m-auto flex justify-center flex-col " :class="{ muncul: showElement }">
+
           <!-- <div class=" border-2 border-white  m-auto w-[20px]"></div> -->
+        <!-- <div class=""> <img src="https://upgifs.com/img/gifs/N4EvmR0UfrAfS.gif" alt="" width="100%" height="20px" class="block overflow"></div> -->
+
+          <!-- <div class="w-full h-[200px] mb-10  overflow-hidden flex items-start">
+            <img src="https://www.skwigly.co.uk/wp-content/uploads/2017/03/Skwigly-Banner-Weird-Eye.gif" alt="" class="w-full rounded-xl">
+          </div> -->
+
+          <!-- <div class="border-2 border-white lg:mt-[20vh] mt-[50px] mb-[60px] p-[20px] font-bold text-white animate-marquee whitespace-nowrap"> </div> -->
 
           <div>
             <h1 class="mt-1  font-bold text-white text-center text-lg md:text-2xl lg:text-3xl mb-5">About</h1>
@@ -31,17 +60,20 @@ onMounted(() => {
 
           </div>
 
+
               <hr class="  border-[#5C5C5C] my-[50px] w-full m-auto">
           
 
           <div class=" w-[90%] lg:w-[800px]  mt-[50px] m-auto flex justify-center flex-col ">
             <h1 class="mt-1  font-bold text-white text-center text-lg md:text-2xl lg:text-3xl mb-5">Blog</h1>
             <div class="w-full md:flex ">
-              <a href="https://rakuzancoding.blogspot.com/2021/08/eqq.html"  class=" block cursor-pointer w-full md:mx-2 my-5 p-5 rounded-lg text-white  border-2 border-[white]"><p class=" text-[12px] font-medium text-gray-400">30 Agustus 2021</p><h1 class="font-bold my-2">Cara Menjadi Front End Developer Dan Yang Harus Di Kuasai</h1><p class="text-[#38F8B3]">Read more -></p></a>
-              <a href="https://rakuzancoding.blogspot.com/2021/09/15-aplikasi-coding-yang-bisa-kalian.html"  class=" block cursor-pointer w-full md:mx-2 my-5 p-5 rounded-lg text-white  border-2 border-[white]"><p class=" text-[12px] font-medium text-gray-400">21 September 2021</p><h1 class="font-bold my-2">16 Aplikasi Text Editor yang bisa kalian pakai untuk ngoding di perangkat</h1><p class="text-[#38F8B3]">Read more -></p></a>
-              <a href="https://rakuzancoding.blogspot.com/2021/09/cara-menjadi-back-end-developer-dan.html"  class=" block cursor-pointer w-full md:mx-2 my-5 p-5 rounded-lg text-white  border-2 border-[white]"><p class=" text-[12px] font-medium text-gray-400">01 September 2021</p><h1 class="font-bold my-2">Cara Menjadi Back End Developer Dan Yang Harus Dikuasai</h1><p class="text-[#38F8B3]">Read more -></p></a>
+              <a href="https://rakuzancoding.blogspot.com/2021/08/eqq.html"  class=" block cursor-pointer w-full hover:bg-[#535353] md:mx-2 my-5 p-5 rounded-lg text-white  border-2 border-[white]"><p class=" text-[12px] font-medium text-gray-400">30 Agustus 2021</p><h1 class="font-bold my-2">Cara Menjadi Front End Developer Dan Yang Harus Di Kuasai</h1><p class="text-[#38F8B3]">Read more -></p></a>
+              <a href="https://rakuzancoding.blogspot.com/2021/09/15-aplikasi-coding-yang-bisa-kalian.html"  class=" block cursor-pointer w-full hover:bg-[#535353] md:mx-2 my-5 p-5 rounded-lg text-white  border-2 border-[white]"><p class=" text-[12px] font-medium text-gray-400">21 September 2021</p><h1 class="font-bold my-2">16 Aplikasi Text Editor yang bisa kalian pakai untuk ngoding di perangkat</h1><p class="text-[#38F8B3]">Read more -></p></a>
+              <a href="https://rakuzancoding.blogspot.com/2021/09/cara-menjadi-back-end-developer-dan.html"  class=" block cursor-pointer w-full hover:bg-[#535353] md:mx-2 my-5 p-5 rounded-lg text-white  border-2 border-[white]"><p class=" text-[12px] font-medium text-gray-400">01 September 2021</p><h1 class="font-bold my-2">Cara Menjadi Back End Developer Dan Yang Harus Dikuasai</h1><p class="text-[#38F8B3]">Read more -></p></a>
             </div>
           </div>
+
+
 
               <hr class="  border-[#5C5C5C] my-[50px] w-full m-auto">
 
@@ -92,7 +124,14 @@ onMounted(() => {
             </div>
           </div>
 
-              <hr class="  border-[#5C5C5C] my-[50px] w-full m-auto">
+          <hr class="  border-[#5C5C5C] my-[50px] w-full m-auto">
+            <!-- <h1 class="mt-1  font-bold text-white text-center text-lg md:text-2xl lg:text-3xl mb-5">Certificate</h1> -->
+
+
+          <!-- <CertificateBelajar></CertificateBelajar>
+
+          <hr class="  border-[#5C5C5C] my-[50px] w-full m-auto"> -->
+
 
 
           <div class=" w-[90%] lg:w-[800px]  mt-[50px] m-auto flex justify-center flex-col ">
@@ -118,6 +157,8 @@ onMounted(() => {
 </template>
 
 <style scoped>
+
+
 
 
 @keyframes masukKanan {

@@ -1,107 +1,143 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fauzan</title>
+    <style>
+      /* color palette from <https://github.com/vuejs/theme> */
+    :root {
+      --vt-c-white: #ffffff;
+      --vt-c-white-soft: #f8f8f8;
+      --vt-c-white-mute: #f2f2f2;
 
-<template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
+      --vt-c-black: #181818;
+      --vt-c-black-soft: #222222;
+      --vt-c-black-mute: #282828;
 
-    <div class="awalan my-5">
-        <div class="fade-slide-in text-4xl font-black">Creative</div>
-        <div class="text-4xl font-black">Front End Developer</div>
-    </div>
+      --vt-c-indigo: #2c3e50;
 
-    <br><br><br><br><br>
+      --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+      --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+      --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+      --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      --vt-c-text-light-1: var(--vt-c-indigo);
+      --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+      --vt-c-text-dark-1: var(--vt-c-white);
+      --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+    }
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+    /* semantic color variables for this project */
+    :root {
+      --color-background: var(--vt-c-white);
+      --color-background-soft: var(--vt-c-white-soft);
+      --color-background-mute: var(--vt-c-white-mute);
 
-  <RouterView />
-</template>
+      --color-border: var(--vt-c-divider-light-2);
+      --color-border-hover: var(--vt-c-divider-light-1);
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
+      --color-heading: var(--vt-c-text-light-1);
+      --color-text: var(--vt-c-text-light-1);
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+      --section-gap: 160px;
+    }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: var(--vt-c-black);
+        --color-background-soft: var(--vt-c-black-soft);
+        --color-background-mute: var(--vt-c-black-mute);
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
+        --color-border: var(--vt-c-divider-dark-2);
+        --color-border-hover: var(--vt-c-divider-dark-1);
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
+        --color-heading: var(--vt-c-text-dark-1);
+        --color-text: var(--vt-c-text-dark-2);
+      }
+    }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      font-weight: normal;
+    }
 
-nav a:first-of-type {
-  border: 0;
-}
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+    body {
+      background-color: #0F0D0D;
+      color: #38F8B3;
+      transition: color 0.5s, background-color 0.5s;
+      line-height: 1.6;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      font-size: 15px;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+    #canvas-container {
+      width: 400px;
+      height: 400px;
+    }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+    </style>
+ 
+    <script>
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
 
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
+      // Call scrollToTop function on page load
+      window.onload = scrollToTop;
+    </script>
+  </head>
+  <body>
+    <!-- <div>asdas</div> -->
 
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 
-@keyframes fadeSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
 
-.fade-slide-in {
-  animation: fadeSlideIn 0.5s ease-in-out;
-}
-</style>
+  <script>
+    // Inisialisasi scene, camera, dan renderer
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+    // Membuat geometry dan material
+    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+
+    // Membuat mesh dan menambahkannya ke scene
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    // Mengatur posisi awal
+    cube.position.set(0, 0, -5);
+
+    // Fungsi animasi
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Rotasi objek
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      // Render scene
+      renderer.render(scene, camera);
+    }
+
+    // Memanggil fungsi animasi
+    animate();
+  </script>
+
+  </body>
+</html>
