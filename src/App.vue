@@ -43,7 +43,7 @@ onMounted(() => {
         
 
 
-        <div class="baru-muncul lg:mt-[20vh] mt-[50px] w-[90%] lg:w-[800px]   m-auto flex justify-center flex-col " :class="{ muncul: showElement }">
+        <div class="baru-muncul  w-[90%] lg:w-[800px]   m-auto flex justify-center flex-col " :class="{ muncul: showElement }">
 
           <!-- <div class=" border-2 border-white  m-auto w-[20px]"></div> -->
         <!-- <div class=""> <img src="https://upgifs.com/img/gifs/N4EvmR0UfrAfS.gif" alt="" width="100%" height="20px" class="block overflow"></div> -->
@@ -53,6 +53,9 @@ onMounted(() => {
           </div> -->
 
           <!-- <div class="border-2 border-white lg:mt-[20vh] mt-[50px] mb-[60px] p-[20px] font-bold text-white animate-marquee whitespace-nowrap"> </div> -->
+
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/33nGS4mfFhY" class=" mt-[50px]" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h1 class=" text-center text-white text-sm mb-[100px]">Penjelasan Fullstack dari pak shandika</h1>
 
           <div>
             <h1 class="mt-1  font-bold text-white text-center text-lg md:text-2xl lg:text-3xl mb-5">About</h1>
