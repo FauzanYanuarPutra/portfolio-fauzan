@@ -30,7 +30,7 @@ onMounted(() => {
   
 
     <div class="awalan  px-5">
-        <div class="flex naik-atas justify-center" >
+        <div class="flex naik-atas justify-center gambar" >
             <div>
               <div class="masuk-kanan mb-[-10px] lg:mb-[-25px] text-6xl md:text-7xl lg:text-8xl xl:text-9xl bg-transparent  font-bold">Creative</div>
               <div class="masuk-kiri text-6xl md:text-7xl lg:text-8xl xl:text-9xl bg-transparent  font-bold ml-20">Developer</div>
@@ -158,7 +158,11 @@ onMounted(() => {
 
 <style scoped>
 
-
+/* .gambar {
+     background-image: url('./assets/bumi.jpg');
+    background-size: cover;
+    background-position: center;
+} */
 
 
 @keyframes masukKanan {
@@ -176,7 +180,7 @@ onMounted(() => {
 @keyframes masukKiri {
   0% {
     opacity: 0;
-    transform: translateX(40px);
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
