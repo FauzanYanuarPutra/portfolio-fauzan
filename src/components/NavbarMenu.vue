@@ -79,20 +79,21 @@ export default {
     height: 0px;
     border-radius: 100%;
   }
+
   25% {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 20px;
     background-color: #559e83;
   }
   50% {
-    width: 60%;
-    height: 20%;
+    width: 50px;
+    height: 100px;
     background-color: #575353;
   }
   75% {
-    width: 60%;
-    height: 100%;
+    width: 100%;
+    height: 100px;
     background-color: #559e83;
   }
   100% {

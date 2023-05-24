@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 // import ScrollGsap from './components/ScrollGsap.vue'
 import CertificateBelajar from './components/CertificateBelajar.vue'
-import NavbarMenu from './components/NavbarMenu.vue';
+import NavbarMenu from './components/NavbarMenu.vue'
 
 
 
@@ -51,11 +51,24 @@ onMounted(() => {
           <!-- <div class="w-full h-[200px] mb-10  overflow-hidden flex items-start">
             <img src="https://www.skwigly.co.uk/wp-content/uploads/2017/03/Skwigly-Banner-Weird-Eye.gif" alt="" class="w-full rounded-xl">
           </div> -->
-
+<!-- origin-left -->
           <!-- <div class="border-2 border-white lg:mt-[20vh] mt-[50px] mb-[60px] p-[20px] font-bold text-white animate-marquee whitespace-nowrap"> </div> -->
+          <div class="relative hover:scale-110 hover:rotate-3  transition duration-800 cursor-pointer rounded-lg ">
+            <img src="./assets/fauzan.jpg" alt="" class="w-[100%] h-[350px] object-cover object-top  top-0 bottom-4 lg:mt-[50px]  mb-[20px] brightness-75" >
 
-          <iframe width="100%" height="200" src="https://www.youtube.com/embed/33nGS4mfFhY" class=" mt-[50px]" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <h1 class=" text-center text-white text-sm mb-[100px]">Penjelasan Fullstack dari pak shandika</h1>
+            
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20">
+              <div class="w-full text-end h-full flex flex-nowrap whitespace-nowrap justify-end items-end  text-2xl font-bold opacity-0 transition-opacity duration-300 hover:opacity-100">
+                <div class=" p-5">
+                  <p class="font-bold mb-[-10px] text-[20px] lg:text-2xl text-white">Muhammad Fauzan Yanuar Putra</p> <p class="text-[20px] lg:text-2xl font-semibold ">Fullstack Developer</p>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+          <!-- <iframe width="100%" height="200" src="https://www.youtube.com/embed/33nGS4mfFhY" class=" mt-[50px]" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+          <!-- <h1 class=" text-center text-white text-sm mb-[100px]">Penjelasan Fullstack dari pak shandika</h1> -->
 
           <div>
             <h1 class="mt-1  font-bold text-white text-center text-lg md:text-2xl lg:text-3xl mb-5">About</h1>
@@ -75,6 +88,9 @@ onMounted(() => {
               <a href="https://rakuzancoding.blogspot.com/2021/09/cara-menjadi-back-end-developer-dan.html"  class=" block cursor-pointer w-full hover:bg-[#535353] md:mx-2 my-5 p-5 rounded-lg text-white  border-2 border-[white]"><p class=" text-[12px] font-medium text-gray-400">01 September 2021</p><h1 class="font-bold my-2">Cara Menjadi Back End Developer Dan Yang Harus Dikuasai</h1><p class="text-[#38F8B3]">Read more -></p></a>
             </div>
           </div>
+
+          
+
 
 
 
