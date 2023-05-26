@@ -4,7 +4,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500&display=swap');
-@import '~mdb-ui-kit/css/mdb.min.css';
 
 :root {
   --color-text: '#000000';
