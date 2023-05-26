@@ -173,7 +173,7 @@ onMounted(() => {
 
                 </div>
                 <div class="relative hover:scale-95 hover:brightness-50  transition duration-800 cursor-pointer rounded-lg"  id="about">
-                    <img src="public/images/project1.png" alt="" class="w-full rounded-xl">
+                    <img src="./assets/project1.png" alt="" class="w-full rounded-xl">
                     <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20">
                       <div class="w-full text-end h-full flex flex-nowrap whitespace-nowrap justify-center items-center  text-2xl font-bold opacity-0 transition-opacity duration-300 hover:opacity-100">
                         <div class=" p-5">
