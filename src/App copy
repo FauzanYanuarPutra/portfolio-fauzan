@@ -83,3 +83,14 @@ nav a:first-of-type {
   }
 }
 </style>
+
+<div class="flex items-center justify-center rounded-full w-40 h-40 bg-gray-300">
+                    <svg viewBox="0 0 100 100" class="text-on-path">
+                      <text dy="5">
+                        <textPath href="#curve" startOffset="0%">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </textPath>
+                      </text>
+                      <path id="curve" d="M50,50 Q75,10 100,50" fill="black"></path>
+                    </svg>
+                  </div>
